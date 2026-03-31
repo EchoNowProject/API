@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "EchoNow",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

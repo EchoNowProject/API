@@ -1,0 +1,20 @@
+meta {
+  name: getAll
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/status-user
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzcwMzE4OTI2LCJuYmYiOjE3NzAzMTg5MjYsImp0aSI6IlFHbjFoTUVTQ01Dc2tTd3kiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.5h4WUtLvYNrKkkZF1S42P-0wqV-Cha0m5kF4ZJqz7xI
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

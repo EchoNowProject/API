@@ -1,0 +1,46 @@
+meta {
+  name: Update Notifications Settings User
+  type: http
+  seq: 2
+}
+
+put {
+  url: {{BASE_URL}}/user-notifications-settings
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzczNjg1OTM1LCJuYmYiOjE3NzM2ODU5MzUsImp0aSI6IjFnSjFzd0lsNEJONzJodFIiLCJzdWIiOiIxMDAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.LKrD-XXrv6A9AwGKxEZ0KoYvRNDhe3SVRCz9ViZKzYU
+}
+
+body:json {
+  {
+    "general_settings": {
+      "created_at": "2026-02-22T16:27:22.000000Z",
+      "notifications_enable": true,
+      "sound_enable": true,
+      "theme": "dark",
+      "updated_at": "2026-03-16T18:38:21.000000Z",
+      "user_id": 100,
+      "volume": 100
+    },
+    "notification_settings": {
+      "created_at": "2026-02-22T16:27:22.000000Z",
+      "email_notifications": true,
+      "notify_direct_messages": true,
+      "notify_friend_requests": false,
+      "notify_mentions": false,
+      "push_notifications": false,
+      "show_message_preview": true,
+      "sound_enabled": true,
+      "updated_at": "2026-03-16T18:33:38.000000Z",
+      "user_id": 100
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

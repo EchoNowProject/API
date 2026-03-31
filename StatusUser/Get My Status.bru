@@ -1,0 +1,20 @@
+meta {
+  name: Get My Status
+  type: http
+  seq: 3
+}
+
+get {
+  url: {{BASE_URL}}/status-users/get-my-status
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzcwNDAwMzQ0LCJuYmYiOjE3NzA0MDAzNDQsImp0aSI6IlBFWjBRdmhWcjM1MEh4OXkiLCJzdWIiOiIxIiwicHJ2IjoiMjNiZDVjODk0OWY2MDBhZGIzOWU3MDFjNDAwODcyZGI3YTU5NzZmNyJ9.QNafo5CCC9rxLPz1tZwLyGokXs1TDAl0780Cy1cFlno
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

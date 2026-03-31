@@ -1,0 +1,20 @@
+meta {
+  name: Get Notifications Settings By User
+  type: http
+  seq: 1
+}
+
+get {
+  url: {{BASE_URL}}/user-notifications-settings
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzcxNzY0NDI4LCJuYmYiOjE3NzE3NjQ0MjgsImp0aSI6ImtXNldGT2FvcUdzelc4UXQiLCJzdWIiOiIxMDAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.8Xu_OltVPizygT0MYyBflGz1Snk6SYPk0omgyUC-kSg
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
