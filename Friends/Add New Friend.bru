@@ -1,0 +1,28 @@
+meta {
+  name: Add New Friend
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{BASE_URL}}/friends/add
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc2MjAwNDc4LCJuYmYiOjE3NzYyMDA0NzgsImp0aSI6IjZYazFFM2Y3NUF0aWF0YUIiLCJzdWIiOiIxMDAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.2dtNAxbOF2ugu3b8Or85QrgIX3gHT8H6rV53kYoPc1w
+}
+
+body:json {
+  {
+    "data": {
+      "idAlert": 6
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}

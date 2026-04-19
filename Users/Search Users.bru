@@ -1,0 +1,24 @@
+meta {
+  name: Search Users
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{BASE_URL}}/users/search/ore
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc1NTg0MTgwLCJuYmYiOjE3NzU1ODQxODAsImp0aSI6IjJqV05hNHJGMThLaTJtdnUiLCJzdWIiOiIxMDAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.GNFrNF_D_oyjD668noA-ueur-FfFEO-_TsXfn8s24lM
+}
+
+body:multipart-form {
+  ~input: asdadsads
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
