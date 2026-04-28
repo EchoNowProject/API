@@ -1,0 +1,29 @@
+meta {
+  name: Send Message
+  type: http
+  seq: 8
+}
+
+post {
+  url: {{BASE_URL}}/individual-chat/send-message
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOi8vMTI3LjAuMC4xOjgwMDAvYXBpL2xvZ2luIiwiaWF0IjoxNzc3MjQxNTI4LCJuYmYiOjE3NzcyNDE1MjgsImp0aSI6IndOQ1B1c20xckRNODhoOWYiLCJzdWIiOiIxMDAiLCJwcnYiOiIyM2JkNWM4OTQ5ZjYwMGFkYjM5ZTcwMWM0MDA4NzJkYjdhNTk3NmY3In0.bRFcvfsU_IOgMuoWg_gN4JaTBLZSaHJWFG978d8Os-I
+}
+
+body:json {
+  {
+    "data": {
+      "friendId": 6,
+      "message": "asd"
+    }
+  }
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
